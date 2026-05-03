@@ -1,219 +1,246 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Anmol Kumar Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anmol Kumar Resume</title>
 
-<style>
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-    font-family: Arial, sans-serif;
-}
+  <style>
 
-body{
-    background: linear-gradient(to right, #141e30, #243b55);
-    padding:15px;
-}
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
 
-.resume{
-    width:850px;
-    margin:auto;
-    background:white;
-    border-radius:10px;
-    overflow:hidden;
-    box-shadow:0 8px 20px rgba(0,0,0,0.4);
-}
+    body{
+      background:#eaeaea;
+      padding:10px;
+    }
 
-/* HEADER */
-.header{
-    background:#243b55;
-    color:white;
-    padding:15px;
-    text-align:center;
-}
+    .resume{
+      width:794px;
+      min-height:1123px;
+      background:#fff;
+      margin:auto;
+      padding:18px;
+      border:2px solid #222;
+    }
 
-.container{
-    display:flex;
-}
+    .header{
+      text-align:center;
+      border-bottom:2px solid #222;
+      padding-bottom:10px;
+      margin-bottom:12px;
+    }
 
-/* LEFT */
-.left{
-    width:30%;
-    background:#2c4a6b;
-    color:white;
-    padding:15px;
-}
+    .header h1{
+      font-size:26px;
+      color:#111;
+      margin-bottom:5px;
+    }
 
-.profile{
-    text-align:center;
-    margin-bottom:10px;
-}
+    .header p{
+      font-size:12px;
+      color:#444;
+      margin:2px 0;
+      word-break:break-word;
+    }
 
-.profile img{
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    border:3px solid white;
-    object-fit:cover;
-}
+    .section{
+      border:1px solid #444;
+      padding:10px;
+      margin-bottom:10px;
+      border-radius:5px;
+    }
 
-input[type="file"]{
-    margin-top:8px;
-    color:white;
-    font-size:12px;
-}
+    .section h2{
+      font-size:18px;
+      margin-bottom:8px;
+      border-bottom:1px solid #999;
+      padding-bottom:4px;
+      color:#111;
+    }
 
-.left h3{
-    margin-top:12px;
-    font-size:14px;
-    border-bottom:1px solid #fff;
-}
+    .section p,
+    .section li{
+      font-size:12px;
+      line-height:1.5;
+      color:#333;
+    }
 
-.left ul{
-    padding-left:15px;
-    font-size:13px;
-}
+    ul{
+      padding-left:18px;
+    }
 
-/* RIGHT */
-.right{
-    width:70%;
-    padding:18px;
-}
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:6px;
+    }
 
-.section{
-    margin-bottom:12px;
-}
+    .skill-box{
+      border:1px solid #777;
+      padding:5px;
+      text-align:center;
+      font-size:11px;
+      border-radius:4px;
+      background:#fafafa;
+    }
 
-.section h2{
-    font-size:16px;
-    border-bottom:2px solid #243b55;
-    margin-bottom:5px;
-}
+    .project{
+      border:1px solid #999;
+      padding:8px;
+      border-radius:4px;
+      margin-bottom:8px;
+    }
 
-.section p, li{
-    font-size:14px;
-}
+    .project h3{
+      font-size:14px;
+      margin-bottom:4px;
+      color:#111;
+    }
 
-/* BUTTON */
-.download-btn{
-    text-align:center;
-    margin-top:15px;
-}
+    .education-item{
+      margin-bottom:8px;
+    }
 
-button{
-    padding:10px 20px;
-    background:#243b55;
-    color:white;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
-}
+    .footer{
+      text-align:center;
+      border-top:2px solid #222;
+      padding-top:8px;
+      margin-top:10px;
+      font-size:11px;
+      color:#555;
+    }
 
-button:hover{
-    background:#1a2d42;
-}
-</style>
+    @media print{
+      body{
+        background:none;
+        padding:0;
+      }
+
+      .resume{
+        border:none;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
 
-<div class="resume" id="resume">
+  <div class="resume">
 
-<div class="header">
-    <h2>Anmol Kumar</h2>
-    <p>📞 9798317929 | 📧 akanmolsingh8@gmail.com</p>
-    <p> Sisma  Lakhisarai, Bihar , India</p>
-</div>
+    <!-- HEADER -->
+    <div class="header">
+      <h1>Anmol Kumar</h1>
 
-<div class="container">
-
-<!-- LEFT -->
-<div class="left">
-    <div class="profile">
-        <img id="photo" src="">
-        <br>
-        <input type="file" accept="image/*" onchange="loadPhoto(event)">
+      <p>Email: akanmolsingh8@gmail.com</p>
+      <p>Phone: +91 9798317929</p>
+      <p>LinkedIn: linkedin.com/in/anmol-singh-361b90343</p>
+      <p>GitHub: github.com/Anmolkumar108</p>
     </div>
 
-    <h3>Skills</h3>
-    <ul>
-        <li>C, Python, Java</li>
-        <li>HTML & CSS</li>
-        <li>Excel & MS Word</li>
-         <li>Canva & replit</li>
-        
-    </ul>
+    <!-- ABOUT -->
+    <div class="section">
+      <h2>About Me</h2>
 
-    <h3>Languages</h3>
-    <ul>
+      <p>
+        Aspiring Software Engineer and BCA student | passionate about
+        Java, Python, Web Development, and AI Development.| Building
+        web applications and AI-based projects while continuously
+        improving technical skills.
+      </p>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+      <h2>Skills</h2>
+
+      <div class="skills">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">Python</div>
+        <div class="skill-box">git</div>
+        <div class="skill-box">GitHub</div>
+        <div class="skill-box">AI Tools</div>
+        <div class="skill-box">C Language</div>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section">
+      <h2>Education</h2>
+
+      <div class="education-item">
+        <p><strong>SITYOG Institute of Technology, Aurangabad</strong></p>
+        <p>BCA (2025 - 2028)</p>
+      </div>
+
+      <div class="education-item">
+        <p><strong>Janta High School, Sheikhpura</strong></p>
+        <p>Intermediate (2023 - 2025) with Science in Biology & mathematics 62.2% </p>
+      </div>
+
+      <div class="education-item">
+        <p><strong>Shri Sitaram Radheshyam High School, Lakhisarai</strong></p>
+        <p>Matriculation (2021 - 2022) With 68%</p>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>AI Personal Assistant</h3>
+
+        <p>
+          Built a Python-based AI assistant for automation,
+          application control, and smart task handling.
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>E-Commerce Website</h3>
+
+        <p>
+          Developed a responsive full-stack shopping website
+          with login and product management features.
+        </p>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+      <h2>Experience</h2>
+
+      <ul>
+        <li>Built personal AI and web development projects.</li>
+        <li>Worked on responsive website designs.</li>
+        <li>Learning full-stack and AI integration.</li>
+      </ul>
+    </div>
+
+    <!-- LANGUAGES -->
+    <div class="section">
+      <h2>Languages</h2>
+
+      <ul>
         <li>Hindi</li>
         <li>English</li>
-    </ul>
-
-    <h3>Strengths</h3>
-    <ul>
-        <li>Hard Working</li>
-        <li>Quick Learner</li>
-         <li>Smart Working</li>
-         <li>Business MindSet</li>
-    </ul>
-</div>
-
-<!-- RIGHT -->
-<div class="right">
-
-    <div class="section">
-        <h2>Career Objective</h2>
-        <p>Motivated fresher seeking an opportunity to apply programming skills and grow professionally.</p>
+      </ul>
     </div>
 
-    <div class="section">
-        <h2>Education</h2>
-        <p><b>BCA</b> -  SITYOG Institute of Technology (2025-2028)</p>
-        <p><b>12th</b> - RAJKIYAKRIT JANTA UCHH VIDYALAYA SIRARI SHEIKHPURA (2024-2025)</p>
-        <p><b>10th</b> - Shri Sitaram Radheshyam High School mahsaura (2022-2023)</p>
+    <!-- FOOTER -->
+    <div class="footer">
+      <p>Anmol Kumar | Professional Resume</p>
     </div>
 
-    <div class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li> weather forecasting (Html & Css & JS)</li>
-            <li>personal voice assistant (Python)</li>
-            <li>E-Commerce Website (Html & Css & Js)</li>
-        </ul>
-    </div>
-    <div class="section">
-    <h2>Achievements</h2>
-    <ul>
-        <li>Top performer in programming practice</li>
-        <li>Participated in coding competitions</li>
-        <li>Participating in a hackathon to build a full-stack e-commerce website (2025)</li>
-    </ul>
-</div>
-
-
-</div>
-
-</div>
-</div>
-
-<div class="download-btn">
-    <button onclick="downloadPDF()">Download Resume</button>
-</div>
-
-<!-- JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-
-<script>
-function loadPhoto(event){
-    document.getElementById("photo").src = URL.createObjectURL(event.target.files[0]);
-}
-
-function downloadPDF(){
-    const element = document.getElementById("resume");
-    html2pdf().from(element).save("Anmol_Resume.pdf");
-}
-</script>
+  </div>
 
 </body>
 </html>
